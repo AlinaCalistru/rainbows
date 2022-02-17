@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainbow</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body>
+
+<header>
+    <div id="welcome-message"></div>
+    <div class="container">
+        <div class="logo">
+
+            <svg id="rainbow-logo" width="300" height="300"  viewBox='0 0 300 300'>
+                <a href="index.html">
+                    <circle r="100" cx="150" cy="120" fill="none" stroke="red" stroke-width="20px" />
+                    <circle r="90" cx="150" cy="120" fill="none" stroke="orange" stroke-width="20px" />
+                    <circle r="80" cx="150" cy="120" fill="none" stroke="yellow" stroke-width="20px" />
+                    <circle r="70" cx="150" cy="120" fill="none" stroke="green" stroke-width="20px" />
+                    <circle r="60" cx="150" cy="120" fill="none" stroke="blue" stroke-width="20px" />
+                    <circle r="50" cx="150" cy="120" fill="none" stroke="indigo" stroke-width="20px" />
+                    <circle r="40" cx="150" cy="120" fill="none" stroke="magenta" stroke-width="10px" />
+                </a>
+                <a href="javascript:history.back()" id="cloud-left">
+                    <path transform="translate(175,25)" d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+                    <text transform="translate(220,105)" x="0" y="0" >&gt;</text>
+                </a>
+                <a href="javascript:history.forward()" id="cloud-right">
+                    <path transform="translate(25,25)" d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+                    <text transform="translate(70,105)" x="0" y="0" >&lt;</text>
+
+                </a>
+            </svg> <!-- svg rainbow circle, clouds svg for buttons forward and back-->
+
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" >Home</a></li><!-- slider plus text plus preferences link, tooltip, preference, sound over logo music on/off button local storage-->
+                <li><a href="about.html" >About</a></li> <!-- about rainbows plus video embeded how rainbow appear, formula, table-->
+                <li><a href="types.html">Types</a></li><!-- interactive gallery with image and text -->
+                <li class="current"><a href="culture.html" >Culture</a></li> <!-- rainbows in culture film music photos plus text, video Iris - local storage-->
+                <li><a href="contact.html" >Contact</a></li> <!-- form, google map  -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="wrapper">
+    <section id="culture">
+        <article>
+            <h1>Rainbows in Culture</h1>
+            <div class="container d-flex">
+                <div class="d-flex-2-1">
+                    <video height="240" controls>
+                        <source src="video/Iris%20The%20Goddess%20of%20Rainbow%20-%20Mythology%20Dictionary%20%20See%20U%20in%20History.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="d-flex-2-2">
+                    <h2>Rainbows in Mythology:</h2>
+                    <p>lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor lorem ipsum in so dor </p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="container d-flex">
+                <div class="d-flex-2-1">
+                    <img src="img/rainbowart.jpg" alt="Art" title="Art" />
+                </div>
+                <div class="d-flex-2-2">
+                    <h2>Rainbows in Art:</h2>
+                    <p>Rainbows are generally described as very colourful and peaceful. The rainbow occurs often in paintings. Frequently these have a symbolic or programmatic significance (for example, Albrecht Dürer's Melancholia I). In particular, the rainbow appears regularly in religious art (for example, Joseph Anton Koch's Noah's Thank Offering). Romantic landscape painters such as Turner and Constable were more concerned with recording fleeting effects of light (for example, Constable's Salisbury Cathedral from the Meadows). Other notable examples appear in work by Hans Memling, Caspar David Friedrich, and Peter Paul Rubens. </p>
+                    <p>In contemporary visual art, the rainbow often appears as well, notably in Peter Coffin's Untitled (Rainbow), 2005 and in Ugo Rondinone's Hell, Yes!, 2001. Like many other cultural references to the rainbow, these either emphasize the possible sublimity of the natural world or the cheerfulness, joy, and celebration often culturally associated with a profusion of colors.</p>
+                    <p>In 2012, American artist, Michael Jones McKean created a large-scale artwork, The Rainbow. The project created, impart, a fully sustainable prismatic rainbow using thousands of gallons of pressurized harvested rainwater, at times stretching several city blocks in size.</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="container d-flex">
+                <div class="d-flex-2-1">
+                    <img src="img/raibowbook.jpg" alt="Literature" title="Literature" />
+                </div>
+                <div class="d-flex-2-2">
+                    <h2>Rainbows in Literature:</h2>
+                    <p>The rainbow inspires metaphor and simile. Virginia Woolf in To the Lighthouse highlights the transience of life and Man's mortality through Mrs Ramsey's thought,</p>
+                    <h3 class="text-center">Wordsworth's 1802 poem "My Heart Leaps Up" begins:</h3>
+                    <p class="text-italic text-center">My heart leaps up when I behold<br/>
+                    A rainbow in the sky:<br/>
+                    So was it when my life began;<br/>
+                    So is it now I am a man;<br/>
+                    So be it when I shall grow old,<br/>
+                    Or let me die!...</p>
+
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="container d-flex">
+                <div class="d-flex-2-1">
+                    <img src="img/rainbowmusic.jpg" alt="Music" title="Music" />
+                </div>
+                <div class="d-flex-2-2">
+                    <h2>Rainbows in Music:</h2>
+                    <ul>
+                        <li>Over the Rainbow is a song sung by the character Dorothy Gale (Judy Garland) in the musical film The Wizard of Oz.</li>
+                        <li>I Can Sing a Rainbow is a popular children's classic song written by Arthur Hamilton, despite the name of the song, not all the colours mentioned are actually colours of the rainbow.</li>
+                        <li>Rainbow Country by Bob Marley.</li>
+                        <li>End of the Rainbow is an award-winning stage play with music (or musical drama) by Peter Quilter.</li>
+                    </ul>
+                    <span id="audio-title">Listen to: Somewhere Over the Rainbow - Violin and Piano <br/>
+                    <audio id="audio-file" src="audio/Somewhere%20Over%20the%20Rainbow%20-%20Violin%20and%20Piano.mp3"></audio></span>
+                    <button onclick="start()" class="btn" id="audio-start">Play</button> <button onclick="stop()" class="btn" id="audio-stop">Stop</button>
+
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="container d-flex">
+                <div class="d-flex-2-1">
+                    <img src="img/rainbowfilm.png" alt="Film" title="Film" />
+                </div>
+                <div class="d-flex-2-2">
+                    <h2>Rainbows in Film:</h2>
+                    <ul>
+                        <li>In A Shine of Rainbows, the young protagonist is promised to be taken into a rainbow.</li>
+                        <li>In the film The Wizard of Oz, lead character Dorothy Gale sings the song "Over the Rainbow" where she fantasises about a place over the rainbow, where the world is in peace and harmony.</li>
+                        <li>In Rainbow, damage to a rainbow threatens the world at large.</li>
+                    </ul>
+
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="container d-flex">
+        <div class="d-flex-1">
+            <p>&copy; 2019 Rainbow, All rights reserved</p>
+        </div>
+        <div id="social-media" class="d-flex-1"><!-- multiple transition applied to an element-->
+            <a id="email" href="mailto:alina.e.calistru@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            <a id="tw" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a id="pf" href="preferences.html" class="tooltip"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tools" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tools fa-w-16 fa-spin fa-lg"><path d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z" class=""></path></svg>
+                <span class="tooltiptext tooltip-top">Change Settings</span></a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js" ></script>
+<script src="js/sound.js" ></script>
+
+</body>
+</html>

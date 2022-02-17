@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainbow</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body>
+
+<header>
+    <div id="welcome-message"></div>
+    <div class="container">
+        <div class="logo">
+
+            <svg id="rainbow-logo" width="300" height="300"  viewBox='0 0 300 300'>
+                <a href="index.html">
+                    <circle r="100" cx="150" cy="120" fill="none" stroke="red" stroke-width="20px" />
+                    <circle r="90" cx="150" cy="120" fill="none" stroke="orange" stroke-width="20px" />
+                    <circle r="80" cx="150" cy="120" fill="none" stroke="yellow" stroke-width="20px" />
+                    <circle r="70" cx="150" cy="120" fill="none" stroke="green" stroke-width="20px" />
+                    <circle r="60" cx="150" cy="120" fill="none" stroke="blue" stroke-width="20px" />
+                    <circle r="50" cx="150" cy="120" fill="none" stroke="indigo" stroke-width="20px" />
+                    <circle r="40" cx="150" cy="120" fill="none" stroke="magenta" stroke-width="10px" />
+                </a>
+                <a href="javascript:history.back()" id="cloud-left">
+                    <path transform="translate(175,25)" d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+                    <text transform="translate(220,105)" x="0" y="0" >&gt;</text>
+                </a>
+                <a href="javascript:history.forward()" id="cloud-right">
+                    <path transform="translate(25,25)" d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+                    <text transform="translate(70,105)" x="0" y="0" >&lt;</text>
+
+                </a>
+            </svg> <!-- svg rainbow circle, clouds svg for buttons forward and back-->
+
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" >Home</a></li><!-- slider plus text plus preferences link, tooltip, preference, sound over logo music on/off button local storage-->
+                <li class="current"><a href="about.html" >About</a></li> <!-- about rainbows plus video embeded how rainbow appear, formula, table-->
+                <li><a href="types.html">Types</a></li><!-- interactive gallery with image and text -->
+                <li><a href="culture.html" >Culture</a></li> <!-- rainbows in culture film music photos plus text, video Iris - local storage-->
+                <li><a href="contact.html" >Contact</a></li> <!-- form, google map  -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="wrapper">
+    <section>
+        <article>
+            <h1>About Rainbows</h1>
+            <div class="container d-flex">
+                <div class="d-flex-1">
+                    <p>Rainbows can be observed whenever there are water drops in the air and sunlight shining from behind the observer at a low altitude angle. Because of this, rainbows are usually seen in the western sky during the morning and in the eastern sky during the early evening. The most spectacular rainbow displays happen when half the sky is still dark with raining clouds and the observer is at a spot with clear sky in the direction of the sun. The result is a luminous rainbow that contrasts with the darkened background. During such good visibility conditions, the larger but fainter secondary rainbow is often visible. It appears about 10° outside of the primary rainbow, with inverse order of colours.</p>
+                    <p>The rainbow effect is also commonly seen near waterfalls or fountains. In addition, the effect can be artificially created by dispersing water droplets into the air during a sunny day. Rarely, a moonbow, lunar rainbow or nighttime rainbow, can be seen on strongly moonlit nights. As human visual perception for colour is poor in low light, moonbows are often perceived to be white.</p>
+
+                    <p>A spectrum obtained using a glass prism and a point source is a continuum of wavelengths without bands. The number of colours that the human eye is able to distinguish in a spectrum is in the order of 100. Accordingly, the Munsell colour system distinguishes 100 hues. The apparent discreteness of main colours is an artefact of human perception and the exact number of main colours is a somewhat arbitrary choice.</p>
+
+                   <p>The  rainbow is comprised of 7 colors.  The order of colors of a Rainbow is red, orange, yellow, green, blue, indigo, violet.</p>
+                </div>
+                <div class="d-flex-1">
+                    <iframe height="300" src="https://www.youtube.com/embed/GqbgJ3c3yhc" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                    <p> The colour pattern of a rainbow is different from a spectrum, and the colours are less saturated. There is spectral smearing in a rainbow owing to the fact that for any particular wavelength, there is a distribution of exit angles, rather than a single unvarying angle. A rainbow is a blurred version of the bow obtained from a point source, because the disk diameter of the sun cannot be neglected compared to the width of a rainbow. The number of colour bands of a rainbow may therefore be different from the number of bands in a spectrum, especially if the droplets are particularly large or small. Therefore, the number of colours of a rainbow is variable. If, however, the word rainbow is used inaccurately to mean spectrum, it is the number of main colours in the spectrum.</p>
+                </div>
+            </div>
+        </article>
+        <article>
+            <div class="container d-flex">
+                <div class="d-flex-1">
+                    <table >
+                        <tr>
+                            <td colspan = "3" class="t-header"><h1>The colors of the visible light spectrum</h1></td>
+                        </tr>
+                        <tr>
+                            <th>Color</th>
+                            <th>Wavelength interval</th>
+                            <th>Frequency interval</th>
+                        </tr>
+
+                        <tr >
+                            <td style="background:#f00;">Red</td>
+                            <td>~ 700-635 nm</td>
+                            <td>~ 430-480 THz</td>
+                        </tr>
+
+                        <tr >
+                            <td style="background: orange;">Orange</td>
+                            <td>~ 635-590 nm</td>
+                            <td>~ 480-510 THz</td>
+                        </tr>
+
+                        <tr >
+                            <td style="background: yellow">Yellow</td>
+                            <td>~ 590-560 nm</td>
+                            <td>~ 510-540 THz</td>
+                        </tr>
+
+                        <tr >
+                            <td style="background:green">Green</td>
+                            <td>~ 560-520 nm</td>
+                            <td>~ 540-580 THz</td>
+                        </tr>
+
+                        <tr >
+                            <td style="background: blue">Blue</td>
+                            <td>~ 490-450 nm</td>
+                            <td>~ 610-670 THz</td>
+                        </tr>
+
+                        <tr >
+                            <td style="background: indigo">Indigo</td>
+                            <td>~ 425-450 nm</td>
+                            <td>~ 670-700 THz</td>
+                        </tr>
+
+                        <tr >
+                            <td style="background:#8000ff">Violet</td>
+                            <td>~ 450-380 nm</td>
+                            <td>~ 790-660 THz</td>
+                        </tr>
+                    </table>
+
+                </div>
+                <div class="d-flex-1 formula">
+                    <h3>Rainbow formula</h3>
+                    <p>The rainbow will occur where the angle <span>&theta;</span> is maximum with respect to the angle <span>&beta;</span>. Therefore, from calculus, we can set <span>d&theta;/d&beta; = 0</span>, and solve for <span>&beta;</span>, which yields Substituting back into the earlier equation for <span>&theta;</span> yields <span>2&theta;max &#8773; 42&#8451;</span> as the radius angle of the rainbow.</p>
+                    <p><span>&beta;<sub>max</sub> = cos<sup>&minus;1</sup>((2&#8730;&minus;1 &#43; n<sup>2</sup>) &#x2215; &#8730;3n) &asymp; 40.2&#176;</span></p>
+                    <p>Source of information: <a id="source-info" target="_blank" href="https://en.wikipedia.org/wiki/Rainbow">Wikipedia</a></p>
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="container d-flex">
+        <div class="d-flex-1">
+            <p>&copy; 2019 Rainbow, All rights reserved</p>
+        </div>
+        <div id="social-media" class="d-flex-1"><!-- multiple transition applied to an element-->
+            <a id="email" href="mailto:alina.e.calistru@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            <a id="tw" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a id="pf" href="preferences.html" class="tooltip"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tools" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tools fa-w-16 fa-spin fa-lg"><path d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z" class=""></path></svg>
+                <span class="tooltiptext tooltip-top">Change Settings</span></a>
+
+        </div>
+    </div>
+</footer>
+<script src="js/main.js" ></script>
+</body>
+</html>

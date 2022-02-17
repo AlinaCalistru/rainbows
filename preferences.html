@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Rainbow</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" integrity="sha384-fnmOCqbTlWIlj8LyTjo7mOUStjsKC4pOpQbqyi7RrhN7udi9RwhKkMHpvLbHG9Sr" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merienda" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <link rel="stylesheet" type="text/css" href="css/rainbow-flower.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" href="favicon.ico" />
+
+</head>
+<body>
+
+<header>
+    <div id="welcome-message"></div>
+    <div class="container">
+        <div class="logo">
+
+                <svg id="rainbow-logo" width="300" height="300"  viewBox='0 0 300 300'>
+                    <a href="index.html">
+                    <circle r="100" cx="150" cy="120" fill="none" stroke="red" stroke-width="20px" />
+                    <circle r="90" cx="150" cy="120" fill="none" stroke="orange" stroke-width="20px" />
+                    <circle r="80" cx="150" cy="120" fill="none" stroke="yellow" stroke-width="20px" />
+                    <circle r="70" cx="150" cy="120" fill="none" stroke="green" stroke-width="20px" />
+                    <circle r="60" cx="150" cy="120" fill="none" stroke="blue" stroke-width="20px" />
+                    <circle r="50" cx="150" cy="120" fill="none" stroke="indigo" stroke-width="20px" />
+                    <circle r="40" cx="150" cy="120" fill="none" stroke="magenta" stroke-width="10px" />
+                    </a>
+                    <a href="javascript:history.back()" id="cloud-left">
+                        <path transform="translate(175,25)" d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+                        <text transform="translate(220,105)" x="0" y="0" >&gt;</text>
+                    </a>
+                    <a href="javascript:history.forward()" id="cloud-right">
+                        <path transform="translate(25,25)" d='M 25,60
+                         a 20,20 1 0,0 0,40
+                         h 50
+                         a 20,20 1 0,0 0,-40
+                         a 10,10 1 0,0 -15,-10
+                         a 15,15 1 0,0 -35,10
+                         z' />
+                        <text transform="translate(70,105)" x="0" y="0" >&lt;</text>
+
+                    </a>
+                </svg> <!-- svg rainbow circle, clouds svg for buttons forward and back-->
+
+        </div>
+        <nav id="menu">
+            <ul>
+                <li><a href="index.html" >Home</a></li><!-- slider plus text plus preferences link, tooltip, preference, sound over logo music on/off button local storage-->
+                <li><a href="about.html" >About</a></li> <!-- about rainbows plus video embeded how rainbow appear, formula, table-->
+                <li><a href="types.html">Types</a></li><!-- interactive gallery with image and text -->
+                <li><a href="culture.html" >Culture</a></li> <!-- rainbows in culture film music photos plus text, video Iris - local storage-->
+                <li><a href="contact.html" >Contact</a></li> <!-- form, google map  -->
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="wrapper">
+    <section>
+        <article>
+            <h1>Manage your settings</h1>
+            <div class="container d-flex">
+                <div class="d-flex-1">
+                    <h3>Your Name</h3>
+                    <input type="text" id="prefName" value="" />
+
+                    <h3>Paragraph Color</h3>
+                    <input type="color" id="paracolor" onchange="setParaColor();" value="#ffffff">
+
+                    <h3>Background Color</h3>
+                    <input type="color" id="bgcolor" onchange="setBgColor();" value="#000000">
+
+                    <h3>Paragraph Font Size</h3>
+
+                    <input id="parafontsize" type="range" min="12" max="30" onchange="setFontSize();" value="20"/> <span id="fontsize-display"></span>
+
+                    <br><br>
+                    <h3 id="message">&nbsp;</h3>
+                    <button id="save" onclick="savepreferencesObject()" class="btn">Save preferences</button> <button id="reset" onclick="reset()"  class="btn">Reset Preferences</button>
+                    <br/>
+
+                    <div class="rainbow-wrap">
+                        <div class="rainbow" id="rainbow">
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+
+                            <div class="flower">
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                                <div class="dot"></div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="btn" onclick="start()">Start</button>
+                    <button class="btn" onclick="stop()">Stop</button>
+                    <input id="animation-speed" type="range" min="1" max="15" onchange="setAnimationSpeed();" value="7"/>
+                </div>
+                <div class="d-flex-1">
+                   <h3>Meaning of Rainbows</h3>
+                    <p>The philosophy of spiritual cohesion is a common current in the meaning of rainbows. The rainbow holds a ubiquitous meaning of unity in numerous cultures. This pervasive message of unification is specifically addressed in the union between sky and earth with the rainbow serving as a bridge between the two.</p><br>
+                    <h3>Rainbow in one word:</h3>
+                    <p>Life, Divinity, Promise, Creation, Transformation, Initiation, Potential, Provision, Harmony, Expansion, Ascension, Spirituality, Connection, Hope.</p>
+
+
+                </div>
+            </div>
+        </article>
+    </section>
+</main>
+
+<footer>
+    <div class="container d-flex">
+        <div class="d-flex-1">
+        <p>&copy; 2019 Rainbow, All rights reserved</p>
+        </div>
+        <div id="social-media" class="d-flex-1"><!-- multiple transition applied to an element-->
+            <a id="email" href="mailto:alina.e.calistru@gmail.com"><i class="fas fa-envelope-square"></i></a>
+            <a id="tw" href="https://twitter.com"><i class="fab fa-twitter-square"></i></a>
+            <a id="fb" href="https://www.facebook.com/"><i class="fab fa-facebook"></i></a>
+            <a id="pf" href="preferences.html" class="tooltip"><svg aria-hidden="true" focusable="false" data-prefix="fas" data-icon="tools" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" class="svg-inline--fa fa-tools fa-w-16 fa-spin fa-lg"><path d="M501.1 395.7L384 278.6c-23.1-23.1-57.6-27.6-85.4-13.9L192 158.1V96L64 0 0 64l96 128h62.1l106.6 106.6c-13.6 27.8-9.2 62.3 13.9 85.4l117.1 117.1c14.6 14.6 38.2 14.6 52.7 0l52.7-52.7c14.5-14.6 14.5-38.2 0-52.7zM331.7 225c28.3 0 54.9 11 74.9 31l19.4 19.4c15.8-6.9 30.8-16.5 43.8-29.5 37.1-37.1 49.7-89.3 37.9-136.7-2.2-9-13.5-12.1-20.1-5.5l-74.4 74.4-67.9-11.3L334 98.9l74.4-74.4c6.6-6.6 3.4-17.9-5.7-20.2-47.4-11.7-99.6.9-136.6 37.9-28.5 28.5-41.9 66.1-41.2 103.6l82.1 82.1c8.1-1.9 16.5-2.9 24.7-2.9zm-103.9 82l-56.7-56.7L18.7 402.8c-25 25-25 65.5 0 90.5s65.5 25 90.5 0l123.6-123.6c-7.6-19.9-9.9-41.6-5-62.7zM64 472c-13.2 0-24-10.8-24-24 0-13.3 10.7-24 24-24s24 10.7 24 24c0 13.2-10.7 24-24 24z" class=""></path></svg>
+                <span class="tooltiptext tooltip-top">Change Settings</span></a>
+        </div>
+    </div>
+</footer>
+<script src="js/main.js" ></script>
+<script src="js/preferences.js" ></script>
+</body>
+</html>
